@@ -1,0 +1,133 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+form,
+fieldset,
+legend,
+label,
+address,
+blockquote,
+header,
+footer,
+section,
+article,
+aside,
+figure,
+figcaption,
+details,
+hgroup,
+nav,
+menu,
+audio,
+video,
+canvas,
+time,
+mark {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer,
+section,
+article,
+aside,
+figure,
+figcaption,
+details,
+nav,
+menu {
+    display: block;
+}
+
+li {
+    list-style-type: none;
+}
+
+img,
+fieldset {
+    border: none;
+}
+
+li img,
+li a,
+dt img,
+dt img,
+dd a,
+dt a {
+    vertical-align: top;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+address,
+em {
+    font-style: normal;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    color: #333;
+    text-decoration: none;
+}
+
+
+/* 리스트 스타일 초기화 */
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+
+/* 텍스트 숨기기 */
+
+.text_hide {
+    font-size: 0;
+    line-height: 0;
+    text-indent: -99999px;
+    overflow: hidden;
+}
+
+
+/* 요소 숨기기 */
+
+.hide {
+    display: none;
+}
+
+/* clear-fix */
+.clear_fix::after {
+    content: "";
+    display: block;
+    clear: both;
+}

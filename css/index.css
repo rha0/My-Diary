@@ -1,0 +1,712 @@
+@charset "utf-8";
+
+@import url("common.css");
+
+@font-face {
+	font-family: seoulhangangjungl;
+	src: url('../font/SeoulHangangJungL/seoulhangangjungl.eot');
+	src: local(※), url('../font/SeoulHangangJungL/seoulhangangjungl.woff')
+		format('woff');
+}
+
+@font-face {
+	font-family: seoulhangangjungm;
+	src: url('../font/SeoulHangangJungM/seoulhangangjungm.eot');
+	src: local(※), url('../font/SeoulHangangJungM/seoulhangangjungm.woff')
+		format('woff');
+}
+
+
+/**
+*   index.css
+*/
+
+#container {
+	width: auto;
+	min-width: 1400px;
+	z-index: 1;
+	background: url("../img/main/bg.png");
+}
+
+.page_header{
+	background: rgba(255,255,255,0.6);
+}
+
+/**************** header ****************/
+#header {
+	min-width: 1400px;
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+	border-bottom: 1px solid #fff;
+}
+
+#header_wrap {
+	width: 90%;
+	height: 80px;
+	margin: 0 auto;
+}
+
+#header_wrap::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/**************
+    logo
+***************/
+#logo {
+	width: 20%;
+	height: 80px;
+	float: left;
+}
+
+#logo a {
+	text-align: center;
+	display: block;
+	line-height: 80px;
+}
+
+#logo a img {
+	width: 200px;
+}
+
+/**************
+    gnb
+***************/
+#gnb {
+	width: 80%;
+	height: 80px;
+	float: left;
+}
+
+#gnb::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#gnb li {
+	float: left;
+	width: 20%;
+	line-height: 80px;
+}
+
+#gnb li:nth-child(1) {
+	margin-left: 2%;
+	width: 22%;
+}
+
+#gnb li:nth-child(2) {
+	width: 22%;
+}
+
+#gnb li:nth-child(4) {
+	width: 14%;
+}
+
+.select {
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	text-shadow: -2px 2px 2px #000;
+}
+
+#gnb .on {
+	color: #84922d;
+	text-shadow: none;
+	/* text-decoration: underline; */
+	font-weight: bold;
+} 
+
+
+/**************** contents ****************/
+
+#contents {
+	width: 100%;
+}
+
+
+/**************
+    main_visual
+***************/
+
+#main_visual {
+	width: 100%;
+	display: inline-block;
+}
+
+#main_visual video {
+	width: 100%;
+	overflow: hidden;
+}
+
+
+/**************
+    content_1
+***************/
+
+#content_1 {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+/**
+    .title
+**/
+
+.title {
+	padding-top: 120px;
+	margin-left: 8.5%;
+}
+
+.title h1 {
+	font-size: 30px;
+	color: #02602c;
+	font-family: 'SeoulHangangJungL';
+	line-height: 150%;
+}
+
+.title h3 {
+	font-size: 18px;
+	color: #84922d;
+	font-family: 'SeoulHangangJungL';
+}
+
+
+/**
+    #agricultural
+**/
+
+#technique {
+	display: inline-block;
+	position: absolute;
+	width: 60%;
+	left: 17%;
+	bottom: 23%;
+}
+
+#farmer {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+
+/**************
+    content_2
+***************/
+
+#content_2 {
+	width: auto;
+	position: relative;
+}
+
+.title img {
+	width: 12%;
+	position: absolute;
+	left: 0;
+	top: 15%;
+}
+
+
+/**
+    #farm
+**/
+
+#farm {
+	width: 50%;
+	display: block;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+}
+
+#filed {
+	width: 100%;
+}
+
+#farm .position {
+	display: block;
+	width: 5%;
+}
+
+#p1 {
+	position: absolute;
+	top: 4%;
+	left: 86%;
+}
+
+#p2 {
+	position: absolute;
+	top: 15%;
+	left: 43%;
+}
+
+#p3 {
+	position: absolute;
+	top: 26%;
+	left: 8%;
+}
+
+#p4 {
+	position: absolute;
+	top: 45%;
+	left: 80%;
+}
+
+
+/**
+    #bg_arrow #crop #ribbon
+**/
+
+#bg_arrow {
+	position: absolute;
+	display: block;
+	left: 37%;
+	width: 55%;
+	top: 35%;
+	z-index: -1;
+}
+
+
+/**
+    #slide_text
+**/
+
+#slide_text {
+	width: 60%;
+	position: absolute;
+	top: 60%;
+	left: 20%;
+	position: absolute;
+}
+
+#slide_text::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#img_wrap {
+	width: 95%;
+	margin-top: 2%;
+	margin-left: 9%;
+}
+
+#title_img {
+	width: 23%;
+	border-radius: 70%;
+	border: 10px solid #95a051;
+}
+
+#text_img {
+	width: 55%;
+	margin-left: 5%;
+	margin-bottom: 4%;
+}
+
+
+/**************
+    content_3
+***************/
+
+#content_3 {
+	width: auto;
+	position: relative;
+}
+
+#color {
+	width: 18%;
+	display: block;
+	position: absolute;
+	top: 40%;
+	left: 13%;
+}
+
+#text2 {
+	width: 15%;
+	display: block;
+	position: absolute;
+	top: 75%;
+	left: 17%;
+}
+
+#fruit {
+	width: 20%;
+	position: absolute;
+	top: 20%;
+	left: 35%;
+}
+
+#b_crop {
+	width: 18%;
+	display: block;
+	position: absolute;
+	top: 78%;
+	right: 19%;
+}
+
+#medi {
+	width: 8%;
+	display: block;
+	position: absolute;
+	bottom: -8%;
+	right: 50%;
+}
+
+
+/**************
+    content_4
+***************/
+
+#content_4 {
+	width: auto;
+	min-width: 1400px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#icon_wrap {
+	width: 100%;
+}
+
+#icon_wrap::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#kalenbog {
+	width: 47%;
+	min-width: 800px;
+	position: absolute;
+	top: 7%;
+	left: 26%;
+}
+
+#kalenbog::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#kalenbog img {
+	width: 50%;
+	min-width: 400px;
+	float: left;
+}
+
+#kalenbog div {
+	width: 50%;
+	float: left;
+	line-height: 200%;
+	margin-top: 30%;
+}
+
+#kalenbog div h3 {
+	font-size: 20px;
+	color: #84922d;
+}
+
+#kalenbog div .c4_title {
+	color: #02602c;
+}
+
+#kalenbog div p {
+	font-size: 14px;
+	color: #603813;
+	font-weight: bold;
+}
+
+
+/**
+    #natural / #science / #challenge
+**/
+
+#icon_img {
+	width: 80%;
+	display: block;
+	position: absolute;
+	left: 10%;
+	bottom: 5%;
+}
+
+.icon_img {
+	width: 33%;
+	text-align: center;
+}
+
+.icon_img img {
+	width: 50%;
+	min-width: 220px;
+}
+
+.icon_text {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.icon_text h3 {
+	font-size: 20px;
+	color: #84922d;
+	line-height: 200%;
+}
+
+.icon_text p {
+	font-size: 14px;
+	color: #603813;
+	font-weight: bold;
+}
+
+.c4_title {
+	color: #02602c;
+}
+
+#natural {
+	float: left;
+}
+
+#science {
+	float: left;
+}
+
+#challenge {
+	float: left;
+}
+
+
+/**************
+    content_5
+***************/
+
+#content_5 {
+	padding-top: 80px; 
+	width: 100%;
+}
+
+#con_5_wrap {
+	padding-top: 55px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 580px;
+	margin-bottom: 50px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+#hello {
+	width: 60%;
+	margin: 0 auto;
+	height: 500px;
+}
+
+#c5_title {
+	width: 100%;
+	line-height: 220%;
+	border-bottom: 1px solid #603813;
+	color: #603813;
+	font-family: 'seoulhangangjungl';
+}
+
+#c5_title span {
+	color: #603813;
+	font-weight: lighter;
+}
+
+#c5_text p {
+	margin-top: 80px;	
+	color: #603813;
+	font-size: 18px;
+}
+
+#c5_text p span {
+	color: #02602c;
+	font-weight: bold;
+}
+
+#sign {
+	width: 300px;
+	margin-top: 65px;
+	margin-left: 65%;
+}
+
+#sign p {
+	font-size: 18px;
+	text-align: right;
+	color: #0c0906;
+}
+
+#sign img {
+	width: 80%;
+	margin-top: 10px;
+	margin-left: 60px;
+}
+
+
+/**
+    #btn
+**/
+
+#btn {
+	width: 300px;
+	height: 70px;
+	background-color: orange;
+}
+
+#btn::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#btn h1 {
+	float: left;
+	line-height: 70px;
+	color: #fff;
+}
+
+#btn h1 span {
+	color: rgba(255, 255, 255, .6);
+}
+
+#btn .page {
+	width: 30px;
+	display: block;
+	float: left;
+	margin: 0 25px;
+}
+
+#btn .page img {
+	width: 100%;
+}
+
+
+/**************** footer ****************/
+
+#footer {
+	width: 100%;
+}
+
+
+/**
+    #f_logo
+**/
+
+#f_logo {
+	width: 125px;
+	margin: auto;
+}
+
+#f_logo a {
+	display: block;
+	width: 125px;
+}
+
+#f_logo a img {
+	width: 100%;
+}
+
+
+/**
+    #util / #util_2
+**/
+
+#util {
+	width: 100%;
+	border-bottom: 1px solid #603813;
+	padding:25px 0;
+}
+
+#util ul {
+	width: 45%;
+	margin: auto;
+}
+
+#util ul::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#util ul li {
+	float: left;
+	text-align: center;
+}
+
+#util ul li:nth-child(1) {
+	width: 7%;
+	margin-left: 18%;
+}
+
+#util ul li:nth-child(2) {
+	width: 7%;
+	margin-left: 3%;
+}
+
+#util ul li:nth-child(3) {
+	width: 13%;
+	margin-left: 3%;
+}
+
+#util ul li:nth-child(4) {
+	width: 18%;
+	margin-left: 3%;
+}
+
+#util ul li:nth-child(5) {
+	width: 7%;
+	margin-left: 3%;
+}
+
+#util ul li a {
+	display: block;
+	font-size: 0.8em;
+	color: #603813;
+}
+
+#util_2 {
+	width: 100%;
+}
+
+#util_2 ul {
+	width: 600px;
+	height: 60px;
+	margin: auto;
+}
+
+#util_2 ul::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#util_2 ul li {
+	width: 33%;
+	float: left;
+	line-height: 60px;
+	text-align:center;
+	font-size: 12px;
+	color: #603813;
+}
+
+
+/**
+    #adress
+**/
+
+#adress {
+	width: 100%;
+	height: 60px;
+	background-color: #02602c;
+}
+
+#adress p {
+	line-height: 55px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+}
